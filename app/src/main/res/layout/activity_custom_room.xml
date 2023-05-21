@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCF2"
+    tools:context=".CustomRoom">
+
+    <TextView
+        android:id="@+id/textCustomRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Room"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btndjLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:background="@color/darkBlue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etroomID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="Enter room id"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRoomid"
+
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <EditText
+        android:id="@+id/etroomPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="Enter room password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRoompassword"
+
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textRoomid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RoomId"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_20ssp"
+      android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/darkBlue"
+      app:layout_constraintTop_toBottomOf="@id/textCustomRoom"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/textRoompassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/darkBlue"
+        android:layout_marginTop="@dimen/_20sdp"
+       app:layout_constraintTop_toBottomOf="@id/etroomID"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Create"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etroomPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/btnCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/darkBlue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTournament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tournament Section"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/createMatch"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/yellow"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Create Match"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/updateIdPass"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/red"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Update Id/Password"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/availableMatch"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/purple_200"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Live Match"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/enrolledTeams"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Teams"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17ssp"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

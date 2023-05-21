@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCF2"
+    tools:context=".UserTournament">
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enrolledMatches"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:cardElevation="@dimen/_35sdp"
+        android:layout_margin="@dimen/_25sdp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enrolled Matches"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

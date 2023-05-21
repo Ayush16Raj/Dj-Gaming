@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCF2"
+    tools:context=".CreateMatch">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/etMatchDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Match Date"
+           />
+        <EditText
+            android:id="@+id/etMatchTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Match Time"
+            />
+        <EditText
+            android:id="@+id/etReferenceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Reference Id"
+            />
+
+        <EditText
+            android:id="@+id/etEntryFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+           android:hint="Entry Fee" />
+
+        <EditText
+            android:id="@+id/etPoolPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Pool Prize" />
+
+        <EditText
+            android:id="@+id/etSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Slots" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            />
+
+        <ImageView
+            android:id="@+id/imgThumbnail"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <Button
+            android:id="@+id/btnUploadThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Upload Thumbnail"
+            android:background="@color/darkBlue"/>
+        <Button
+            android:id="@+id/btncreateTournament"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:text="Create Tournament" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

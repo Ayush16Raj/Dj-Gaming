@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCF2"
+    tools:context=".UserRoom">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roomID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:hint=" room id"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintTop_toBottomOf="@id/textRoomid"
+        android:background="@drawable/background_btn_main"
+        android:textColor="@color/darkBlue"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/roomPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:hint=" room password"
+        android:textSize="@dimen/_25ssp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/textRoompassword"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/background_btn_main"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textRoomid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RoomId"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/textRoompassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Password"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/darkBlue"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/roomID"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/copyId"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:srcCompat="@drawable/baseline_content_copy_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRoomid"
+       android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        />
+    <ImageView
+        android:id="@+id/copyPassword"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:srcCompat="@drawable/baseline_content_copy_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRoompassword"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
