@@ -30,3 +30,13 @@ Here e-sport organisers can create tickets so that only those who buy ticket can
 <img src="https://github.com/Ayush16Raj/Dj-Gaming/assets/101800577/a6094b4d-aecc-4aba-958e-e637c44ce287" width="130">
 <img src="https://github.com/Ayush16Raj/Dj-Gaming/assets/101800577/e5940a8d-cbe9-4dd6-8f38-1b34e0973f21" width="130">
 <img src="https://github.com/Ayush16Raj/Dj-Gaming/assets/101800577/889be1cb-0975-488e-8257-bd99f566e50a" width="130">
+
+## Build With
+Kotlin: As the Programming language.
+xml: To build UI
+Firebase: For authentication(Firebase Authentication), realtime database(Firebase Realtime database), Firebase Storage to store images.
+Glide library: For image processing
+RazorPay: For Payment integration
+
+## Download Link
+[DownLoad APK](https://drive.google.com/file/d/1inJzFHDSbI7HkGZcMHkodS89IVskYCBd/view)
