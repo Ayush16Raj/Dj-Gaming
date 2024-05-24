@@ -39,4 +39,4 @@ Glide library: For image processing
 RazorPay: For Payment integration
 
 ## Download Link
-[DownLoad APK](https://drive.google.com/file/d/1inJzFHDSbI7HkGZcMHkodS89IVskYCBd/view)
+[Download APK](https://drive.google.com/file/d/1inJzFHDSbI7HkGZcMHkodS89IVskYCBd/view)
