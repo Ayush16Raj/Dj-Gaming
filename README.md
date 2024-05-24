@@ -33,9 +33,13 @@ Here e-sport organisers can create tickets so that only those who buy ticket can
 
 ## Build With
 Kotlin: As the Programming language.
-xml: To build UI
+
+Xml: To build UI
+
 Firebase: For authentication(Firebase Authentication), realtime database(Firebase Realtime database), Firebase Storage to store images.
+
 Glide library: For image processing
+
 RazorPay: For Payment integration
 
 ## Download Link
